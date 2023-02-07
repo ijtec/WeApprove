@@ -45,6 +45,11 @@ body{
     color:#FFFFFF;
     }
 
+    button:hover{
+      background-color:#C32131;
+      border: 2px solid #8E000E;
+    }
+
     h2{
       color: #A5A5A5;
       font-size: 16px;

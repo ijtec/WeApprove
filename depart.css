@@ -55,6 +55,11 @@
     border:1px;
   }
 
+  button:hover{
+    background-color:#C32131;
+    border: 2px solid #8E000E;
+  }
+
   .fa-circle-xmark{
   position: absolute;
   top: 20px;
