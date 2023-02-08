@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 body{
   background-color: #00000057;
@@ -117,10 +117,11 @@ body{
 
     ::placeholder{
       color: #A5A5A53C;
-    }
+    } 
 
-     /* .fa-magnifying-glass{
+     .fa-magnifying-glass{
+      background-color: red;
       position: absolute;
-      bottom: -100px;
-    } */
+      top: 60px;
+    } 
   

@@ -44,7 +44,7 @@
 
   button{
     position: absolute;
-    bottom: 55px;
+    bottom: 100px;
     width: 200px;
     height: 30px;
     background-color: #D7B321;
@@ -86,7 +86,7 @@
 
     .main{
       position: absolute;
-      bottom: 150px;
+      bottom: 210px;
       left: 25px;
       color:#A5A5A5;
       font-family:'Roboto', sans-serif; 
@@ -110,7 +110,7 @@
       border-color:#A5A5A53C;
     }
     
-    #assign{
+    /* #assign{
       width: 330px;
       height: 30px;
       border-radius: 5px;
@@ -118,7 +118,7 @@
       position: absolute;
       left:25px;
       top: 125px;
-    }
+    } */
 
       .choose{
       position: absolute;
@@ -132,7 +132,7 @@
     
       #holder{
       position:absolute;
-      top:200px;
+      top:140px;
       width: 330px;
       height:30px;
       border-radius:5px;
@@ -176,7 +176,7 @@
     font-family:'Roboto', sans-serif; 
   }
 
-   .fa-caret-down{
+   /* .fa-caret-down{
     color: #8E000E;
     position: absolute;
     right:455px;
@@ -187,11 +187,16 @@
      position: absolute;
      right: 455px;
      bottom:95px;
-}
+} */
 
     p{
     position: absolute;
-    bottom: 20px;
+    bottom: 60px;
     left: 25px;
     color: #D7B321;
+    }
+
+    .fa-circle-xmark{
+      position: absolute;
+     right: 10px;
     }

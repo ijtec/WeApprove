@@ -5,7 +5,7 @@ body{
 
 button{
   position: absolute;
-  bottom: 30px;
+  bottom: 15px;
   width: 150px;
   height: 30px;
   background-color: #D7B321;
@@ -32,7 +32,7 @@ button{
 
   .form{
     padding: 20px;
-    height: 350px;
+    height: 400px;
     width: 400px;
     margin-left: 400px;
     margin-top: 200px;
@@ -47,9 +47,9 @@ button{
     font-family: 'Roboto', sans-serif; 
   }
   
-  .placeholder{
+  .mail{
     position: absolute;
-    bottom: 232px;
+    bottom: 280px;
     left: 50px;
     color:#A5A5A5;
     font-family: 'Roboto', sans-serif;
@@ -87,7 +87,7 @@ button{
     border-radius: 5px;
     border-color:#A5A5A53C ;
     position: absolute;
-    bottom: 100px;
+    bottom: 150px;
     left: 50px;
   }
 
@@ -103,4 +103,29 @@ button{
       position: absolute;
       top: 6px;
       right: 5px;
-}
+  }
+
+      #status{
+      position: absolute;
+      left: 50px;
+      top: 326px;
+      width: 210px;
+      height: 30px;
+      border-radius: 5px;
+      border-color:#A5A5A53C;
+  
+  }
+
+  .sta{
+    position: absolute;
+    top: 300px;
+    left: 50px;
+    color:#A5A5A5;
+    font-family: 'Roboto', sans-serif; 
+  }
+
+  .fa-caret-down{
+    position: absolute;
+    bottom: 95px;
+    right: 165px;
+  }
