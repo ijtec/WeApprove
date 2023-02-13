@@ -23,9 +23,10 @@ body{
   padding: 20px;
   box-shadow: 3px 0px 10px #00000029;
   margin-top: -216px; 
+  display: none;
 }
 
-#logo{
+#logo {
   line-height: 120px;
   /* margin-top: 1px;  */
   margin-left: 40px;
