@@ -43,7 +43,7 @@
 
   }
 
-  /***** MEDIA SCREENS *****/
+  /* **** MEDIA SCREENS ****
 /* tablet */
  @media screen and (max-width:900px){
     /* Box */
@@ -52,15 +52,13 @@ body{
     position: relative;
 }
 
-
-
  .box {
     position: absolute;
     left: -50%;
     top: -100%;
-    background-color: red;
     
     
+     
 
 
 
