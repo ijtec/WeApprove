@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+.box {
+    padding: 20px;
+    height: 184px;
+    width: 335.5px;
+    margin-left: 635px;
+    margin-top: -80px;
+    position: relative;
+    bottom: -300px;
+    right: 200px;
+    background-color: #ffffff;
+    border: 1px solid;
+    border-color: #00000057;
+  }
+  
+  button {
+    background-color: #d7b321;
+    border-color: #9f810a;
+    width: 260px;
+    height: 30px;
+    position: absolute;
+    bottom: 70px;
+    color: #ffffff;
+    right: 55px;
+    padding: 5px;
+
+  }
+
+ .fa-circle-check{
+    color: #d7b321;
+    position: absolute;
+    right:180px;
+    bottom: 140px;
+  }
+
+  p{
+    color:#00000057;
+    font-family: "Roboto", sans-serif;
+    position: absolute;
+    right: 120px;
+    bottom: 100px;
+
+  }
+
+  /* **** MEDIA SCREENS ****
+/* tablet */
+ @media screen and (max-width:900px){
+    /* Box */
+    
+body{
+    position: relative;
+}
+
+ .box {
+    position: absolute;
+    left: -50%;
+    top: -100%;
+    
+    
+     
+
+
+
+
+        /* padding: 20px;
+        height: 184px;
+        width: 335.5px;
+        margin-left: 635px;
+        margin-top: -80px;
+        position: relative;
+        bottom: -300px;
+        right: 200px;
+        background-color: #ffffff;
+        border: 1px solid;
+        border-color: #00000057; */
+      }
+
+
+ }
+    
