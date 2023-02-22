@@ -40,7 +40,7 @@ body{
 .nav-links {
     display: flex;
     flex-direction: column;
-    margin-top: 45px;
+    margin-top: 70px;
     width: 70%;
     align-self: center;
     height:60%;
@@ -67,11 +67,8 @@ body{
     font-size: 12px;
     margin-bottom: 3%;
     color: #707070;
-}
-
-.fa-solid {
-    font-size: 15px;
-    /* border: 1px solid; */
+    display:flex;
+    align-items:center;
 }
 
 .anchor {
@@ -148,7 +145,7 @@ background-color: #fff !important;
   
 }
 .nav-links {
-    margin-top:55px;
+    margin-top:90px;
 }
 
 .mobilenavlogodiv{
@@ -195,6 +192,7 @@ background-color: #fff !important;
 .nav-links{
     width: 90%;
     margin-top: 3vw;
+    height: 600px;
 }
 .mobilenavlogodiv{
     display: none;
@@ -220,6 +218,8 @@ background-color: #fff !important;
 }
 .nav-links{
     width: 70%;
+     margin-top: 3vw;
+      height:60%;
 }
 }
 

@@ -74,34 +74,35 @@ input::-webkit-input-placeholder{
     left: 0;
     top: 0;
     width: 100vw;
+    height: 100vh;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
 .uploadStaffmodal-content {
     background-color: #fefefe;
     margin: 10% auto 15% auto;
-    padding: 20px;
     border: 1px solid #888;
-    width: 50%;
+    width: 80%;
 }
 
 .uploadStaffmodal-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
-    
+    padding: 8px 10px 3px;
+    border-bottom: 1px solid #bdbbbb;
 }
 
-.uploadStaffmodal-header h2 {
+.uploadStaffmodal-header div {
     margin: 0;
-    font-size: 1.5vw;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .close-button {
     cursor: pointer;
-    font-size: 28px;
-    font-weight: bold;
+    font-size: 16px;
+    font-weight: 700;
 }
 
 .uploadStaffmodal-body{
@@ -109,6 +110,7 @@ input::-webkit-input-placeholder{
     align-items: flex-start;
     justify-content: space-around;
     flex-direction: column;
+    padding: 0 10px 10px;
 }
 
 .uploadStaffdropdown {
@@ -121,6 +123,110 @@ input::-webkit-input-placeholder{
 }
 .uploadStaffdropdown > label{
    color: #707070;
+   font-size: 14px;
+}
+.uploadStaffdropdown > select{
+    width: 70%;
+    height: 36px;
+    padding: 0 2%;
+    border-radius: 0.5rem;
+    margin-top: 10px;
+}
+
+.uploadStaffmodal-button {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+}
+.uploadStaffmodal-button > p {
+    color: #D7B321;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.uploadStaffbutton {
+    background-color: #D7B321;
+    color: white;
+    margin-top: 5px;
+    width: 100px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;   
+}
+
+.uploadStaffbutton:hover {
+    background-color:#D40E1F ;
+}
+
+@media screen and (min-width:600px) and (max-width:1199px){
+    .uploadStaffdropdown > select{
+    width: 60%;
+    height: 42px;
+    padding: 0 2%;
+    border-radius: 0.5rem;
+    margin-top: 10px;
+}
+      .uploadStaffmodal-content {
+    width: 500px;
+}     
+.uploadStaffmodal-header {
+    padding: 10px 15px 5px;
+}
+.uploadStaffdropdown > label{
+   color: #707070;
+   font-size: 16px;
+}
+.uploadStaffmodal-header div {
+    margin: 0;
+    font-size: 18px;
+}
+.close-button {
+    font-size: 18px;
+}
+.uploadStaffmodal-body{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 0 15px 10px;
+}
+.uploadStaffbutton{
+    width: 25% ;
+    font-size: 16px;   
+}
+.uploadStaffmodal-button > p {
+        font-size: 16px; 
+}
+
+}
+
+
+@media screen and (min-width:1200px){
+    .uploadStaffmodal-content {
+    background-color: #fefefe;
+    margin: 10% auto 15% auto;
+    border: 1px solid #888;
+    width: 50%;
+}
+
+.uploadStaffmodal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px 5px;
+    border-bottom: 1px solid #bdbbbb;
+}
+.close-button {
+    font-size: 28px;
+}
+.uploadStaffmodal-header div {
+    font-size: 1.5vw;
+}
+.uploadStaffdropdown > label{
+   color: #707070;
    font-size: 1.2vw;
 }
 .uploadStaffdropdown > select{
@@ -130,29 +236,21 @@ input::-webkit-input-placeholder{
     border-radius: 0.5rem;
     margin-top: 0.5vw;
 }
-
-.uploadStaffmodal-button {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+.uploadStaffmodal-body{
+    padding: 0 20px 10px;
+}
+.uploadStaffbutton {
+    width: 20% ;
+    height: 3vw; 
+    font-size: 18px;  
 }
 .uploadStaffmodal-button > p {
-    color: #D7B321;
+    font-size: 18px;
+     margin-top: 0.3vw;
+}
+.uploadStaffmodal-button {
     margin-top: 0.3vw;
 }
-
-.uploadStaffbutton {
-    background-color: #D7B321;
-    color: white;
-    width: 20% ;
-    height: 3vw;
-    border: none;
-    cursor: pointer;
-    
-}
-
-.uploadStaffbutton:hover {
-    background-color:#D40E1F ;
 }
 
 
@@ -174,13 +272,13 @@ input::-webkit-input-placeholder{
   right: 0;
 }
 .newStaffform{
-    width: 35vw;
-    height: 80vh ;
+    width: 80vw;
+    height: 450px ;
     background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-bottom: 1.5%;
+    padding-bottom: 20px;
 }
   .newstaffmodaltittlediv{
     display: flex;
@@ -244,8 +342,37 @@ input::-webkit-input-placeholder{
 
   }
   
+  @media screen and (min-width:600px) and (max-width:1199px){
+    .newStaffform{
+    width:450px;
+    height: 520px ;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 1.5%;
+}
+  }
+
+
+  @media screen and (min-width:1200px){
+     .newStaffform{
+    width: 35vw;
+    height: 40vw ;
+    padding-bottom: 1.5%;
+}
+  }
 
   @media screen and (min-width:1440px) {
+    .newStaffform{
+    width: 35vw;
+     height: 42vw ;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 1.5%;
+}
         .title{
         font-size:20px;
       } 
@@ -360,13 +487,14 @@ input::-webkit-input-placeholder{
   right: 0;
 }
 .newdepartmentform{
-    width: 35vw;
-    min-height: 75vh ;
+    width: 80vw;
+    min-height: 420px ;
     background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-bottom: 1.5%;
+    padding-bottom: 20px;
+    z-index: 99;
 }
   .newdepartmentmodaltittlediv{
     display: flex;
@@ -386,11 +514,15 @@ input::-webkit-input-placeholder{
 
    .newdepartmentmodaltitle, .newdepartmentdropdowncanclebtn{
     color: #A5A5A5;
-    font-size:15px;
+    font-size:13px;
+  }
+
+  .newdepartmentmodaltitle{
+    font-weight: 500;
   }
 
   .newdepartmentmodallabel{
-      font-size: 18px;
+      font-size: 16px;
       font-weight: 400;
       color: #A5A5A5;
       margin-top: 3%;
@@ -423,12 +555,46 @@ input::-webkit-input-placeholder{
     background-color: #D7B321; 
     cursor: pointer; 
     height: 10%;
-  }
-
-  .newdepartmentmodaladdstaffbtn > h1{
     font-size: 16px;
     color: white;
+  }
 
+
+  .newdepartmentdropdowncanclebtn{
+    cursor: pointer;
+  }
+
+  @media screen and (min-width:600px) and (max-width:1200px) {
+    .newdepartmentform{
+    width: 400px;
+    height: 450px;
+}
+  .newdepartmentmodallabel{
+      font-size: 18px;
+      font-weight: 400;
+      color: #A5A5A5;
+      margin-top: 3%;
+  }
+ .newdepartmentmodaltitle, .newdepartmentdropdowncanclebtn{
+    color: #A5A5A5;
+    font-size:18px;
+  }
+  .newdepartmentmodaltitle, .newdepartmentdropdowncanclebtn{
+    color: #A5A5A5;
+    font-size:15px;
+  }
+
+  }
+
+  @media screen and (min-width:1200px){
+         .newdepartmentform{
+    width: 35vw;
+    height: 35vw;
+}
+.newdepartmentmodaltitle, .newdepartmentdropdowncanclebtn{
+    color: #A5A5A5;
+    font-size:20px;
+  }
   }
   
 
@@ -444,6 +610,10 @@ input::-webkit-input-placeholder{
     font-weight: 400;
     color: #A5A5A5;
   }
+        .newdepartmentform{
+    width: 35vw;
+    height: 38vw;
+}
   }
 
 .newdepartmentmodalstatusDiv {
@@ -766,9 +936,26 @@ input::-webkit-input-placeholder{
 }
 
 /* memo */
+.modalViewMemo{
+    cursor: pointer;
+}
+#viewMemomodalcontainer{
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color:rgba(0, 0, 0, 0.5) ;
+  width: 100vw;
+  height:100vh ;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
 .memo-form {
-    width: 35vw;
-    min-height: 60vh;
+    width: 40vw;
+    min-height: 75vh;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -777,6 +964,26 @@ input::-webkit-input-placeholder{
     color: #A5A5A5;
     font-size: 1.3vw;
 }
+ .viewmemomodaltittlediv{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+    background-color: #F5F5F5;
+    padding: 2% 4%;
+  }
+  .viewmemoitemsdiv{
+    display: flex;
+    flex-direction: column;
+    height: 85%;
+    justify-content: space-between;
+    padding: 0 10%;
+  }
+
+   .viewmemomodaltitle, .viewmemoModalClose{
+    color: #A5A5A5;
+    font-size:15px;
+  }
 .memo-items{
     display: flex;
 }
@@ -790,36 +997,37 @@ input::-webkit-input-placeholder{
     margin-left: 6%;
     padding: 5%;
     /* border: #A5A5A5; */
+    height: 90%;
     outline: #A5A5A5;
 }
  .memo-items-button{
     align-items: center;
     justify-content: center;
+     margin: 2% 3%;
  }
  .memo-items-button > button{
    width: 30%;
-   height: 3vw;
-   margin: 0 3%;
+   height: 2.5vw;
+   margin: 0% 3%;
+   font:700;
  }
   #memo-accept{
     background-color: #D7B321;
     color: white;
-    border: #D7B321;
-   
+    border: #D7B321; 
  }
   #memo-accept:hover{
-    background-color: white;
-    color: #D7B321;
-    border: 1px solid #D7B321
+    background-color: #D40E1F;
+    color: white;
  }
  #memo-decline{
     background-color: white;
     color: #D7B321;
     border: 1px solid #D7B321
  }
- #memo-decline:hover{
-    background-color: #D7B321;
-    color: white;
+ #memo-decline:hover{   
+    color: #D40E1F ;
+    border: 2px solid #D40E1F ;
  }
 
 
@@ -1097,4 +1305,11 @@ font-size: 18px;
     font-size: 1.3vw;
     color: #A5A5A5;
     font-weight: 600;
+}
+
+.datedropdown{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }

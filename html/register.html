@@ -6,76 +6,185 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/style.css">
+
     <title>Onboarding</title>
 </head>
 <body>
-    <section class="section">
+    <section class="reg-section">
         <div class="img-section">
              <img class="image" src="../assets/login.png" alt="Your Company"> 
         </div>
-        <div class="container" >             
-            <div class="second-container" >
+        <div class="container"   >             
+            <div class="second-container">
                 <div class="home" >
                     <div class="home-image">
                         <img src="../assets/Icon open-home.png">
                     </div>
                     <p class="back-home">Go back home</p>
                 </div> 
-                <div class="third-container" >
+                <div class="reg-third-container">
                     <div class="sect">
                         <div>
                             <img class="weApproveLogo" src="../assets/logo.png" alt="Your Company">
                         </div>
                         <div class="text">
                             <p class="register"><a href="../html/login.html">Login</a></p>
-                            <p class="login"><a href="../html/register.html">Register</a></p>
+                            <p class="login" style="color: #c6202f;"><a href="../html/register.html" style="color: #c6202f;">Register</a></p>
                         </div>
                     </div>
-                    <form class="register-form" style="border-color: red;">
+                    <form class="register-form" >
                         <div class="company">
                           <label for="">Company name</label>
                           <input type="text">
                         </div>
-                        <div>
-                            <span>
+                        <div class="reg-email-pwd">
+                            <span class="reg-email">
                                 <label for="">Email</label>
                                 <input type="email">
                             </span>
-                            <span>
+                            <span class='reg-pwd'>
                                 <label for="">Phone number</label>
                                 <input type="tel">
                             </span>
                         </div>
                         <div>
-                            <span>
+                            <span class='reg-pwd'>
                                 <label for="">Password</label>
                                 <input type="password">
                             </span>
-                            <span>
+                            <span class='reg-pwd'>
                                 <label for="">Confirm password</label>
                                 <input type="password">
                             </span>
                         </div>
-                        <div>
+                        <div class="checks">
                             <div className="regDeptHeader" style="display: flex;justify-content:space-between;width: 100%;">
                                 <p>Choose your departments</p>
-                                <p>+Add new department</p>
+                                <p style="cursor: pointer;" id="addNewDeptbtnToggle">+Add new department</p>
                             </div>
                             <div class="deptsMap" >
-                                <span></span>
+                                <span>
+                                    <input type="checkbox" name="" id="">
+                                    <label for="
+                                    ">Finance</label>
+                                </span>
+                                <span>
+                                    <input type="checkbox" name="" id="">
+                                    <label for="
+                                    ">Finance</label>
+                                </span>
+                                <span>
+                                    <input type="checkbox" name="" id="">
+                                    <label for="
+                                    ">Finance</label>
+                                </span>
+                                <span>
+                                    <input type="checkbox" name="" id="">
+                                    <label for="
+                                    ">Finance</label>
+                                </span>
+                                <span>
+                                    <input type="checkbox" name="" id="">
+                                    <label for="
+                                    ">Finance</label>
+                                </span>
+                                <span>
+                                    <input type="checkbox" name="" id="">
+                                    <label for="
+                                    ">Finance</label>
+                                </span>
+                                <span>
+                                    <input type="checkbox" name="" id="">
+                                    <label for="
+                                    ">Finance</label>
+                                </span>
+                                <span>
+                                    <input type="checkbox" name="" id="">
+                                    <label for="
+                                    ">Finance</label>
+                                </span>
+                                <span>
+                                    <input type="checkbox" name="" id="">
+                                    <label for="
+                                    ">Finance</label>
+                                </span>
+                                <span>
+                                    <input type="checkbox" name="" id="">
+                                    <label for="
+                                    ">Finance</label>
+                                </span>
                             </div>
                         </div>
-                        <button>
+                        <a style="display: flex;align-items:center;justify-content:center" id="register-btn" href="./chooseplan.html">
                             Register
-                        </button>
+                        </a>
                     </form>
                 </div>
             </div>
-
         </div>
     </section>
-    <script>
-      
+    <!-- add department modal -->
+<div class="newdepartmentModalcontainer" id="newDeptModalcontainer">
+        <div class="newdepartmentform">
+            <div class="newdepartmentmodaltittlediv" >
+                <div class="newdepartmentmodaltitle">Add New Department</div>
+                <i class="fa-solid fa-circle-xmark newdepartmentdropdowncanclebtn" id="newStaffModalClose"></i>
+            </div>
+            <div class="newdepartmentmodalinputsdiv">
+                <div class="nameDiv">
+                    <h1 class="newdepartmentmodallabel">Department Name</h1>
+                    <input type="text" placeholder="Enter the name of the Department" class="newdepartmentmodalinputs" />
+                </div>
+                <div class="deptcodeDiv">
+                    <h1 class="newdepartmentmodallabel">Department Code Name</h1>
+                    <input type="department" placeholder="Enter Code Name" class="newdepartmentmodalinputs" />
+                </div>
+                <div class="refnumberdiv">
+                    <h1  class="newdepartmentmodallabel">Department REF Number</h1>
+                    <input type="email" placeholder=" Enter REF Number" class="newdepartmentmodalinputs" />
+                </div>
+                <div>
+                    <h1 class="newdepartmentmodallabel">Department SEQ Number</h1>
+                    <input type="email" placeholder=" Enter SEQ Number" class="newdepartmentmodalinputs" />
+                </div>
+            </div>
+            <button class="newdepartmentmodaladdstaffbtn">
+                Add
+            </button>
+        </div>
+    </div>
+    </div>
+</div>
+     <script >
+        function toggleNewDeptModal() {
+            console.log("toggled");
+            if (
+                document.getElementById("newdepartmentModalcontainer").style.display === "none"
+            ) {
+                document.getElementById("newdepartmentModalcontainer").style.display = "flex";
+            } else {
+                document.getElementById("newdepartmentModalcontainer").style.display = "none";
+            }
+            }
+            document
+            .getElementById("newStaffModalClose")
+            .addEventListener("click", toggleNewDeptModal);
+            document
+            .getElementById("addNewDeptbtnToggle")
+            .addEventListener("click", toggleNewDeptModal);
+
+            // toggle password visibility
+            // const togglePassword = document.querySelector('#toggle-password');
+            //     const password = document.querySelector('#password');
+
+            //     togglePassword.addEventListener('click', function () {
+            //         const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+            //         password.setAttribute('type', type);
+            //         this.querySelector('i').classList.toggle('fa-eye');
+            //         this.querySelector('i').classList.toggle('fa-eye-slash');
+            //     });
+
     </script>
 </body>
 

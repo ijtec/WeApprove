@@ -10,7 +10,7 @@
   display: none;
 }
 
-@media screen and (min-width: 768px) and (max-width:1999px) {
+@media screen and (min-width: 768px) and (max-width:1100px) {
   .navigation {
     display: flex;
   }
@@ -29,7 +29,7 @@
 
 @media screen and (min-width:1200px){
   .indexnavigationItemsDiv {
-      width: 50% !;
+      width: 50% !important;
   }
   .navigation {
   display: flex;
@@ -90,6 +90,7 @@
   height: 300px;
   display: flex;
   align-items: center;
+  padding-bottom: 5%;
 }
 
 .heroTextDiv {
@@ -127,6 +128,9 @@
 }
 
 @media (min-width: 1024px) {
+  .overlay {
+      padding-bottom: 1%;
+    }
   .manageApproval {
     font-size: 3vw;
     line-height: 4vw;
@@ -389,7 +393,7 @@
 }
  
 .aboutweapproveListImg{
-  width: 3vw;
+  width: 18px;
   align-self: center;
 }
 
@@ -418,12 +422,16 @@
 
 .AboutWeApproveText {
   color: #A5A5A5;
-  font-size: 0.8vw;
+  font-size: 9px !important;
   /* margin-top: 0.8vw; */
   line-height: 3.5vw;
 }
 
 @media (min-width: 1024px) {
+  .aboutweapproveListImg {
+      width: 3vw;
+      align-self: center;
+    }
   .aboutWeapproveDiv {
     flex-direction: row;
     justify-content: space-around;
@@ -452,10 +460,10 @@ button.aboutweapproveFreeTrialButton {
   background-color: #D7B321;
   color: white;
   font-weight: bold;
-  font-size: 2vw;
+  font-size: 16px;
   line-height: 2.1vw;
-  width: 15vw;
-  height: 4.1vw;
+  width: 50%;
+  height: 3vh;
   border: none;
    cursor: pointer; 
 }
@@ -481,15 +489,15 @@ button.aboutweapproveFreeTrialButton:hover {
 }
 .AboutWeApproveHeading{
     text-align: center;
-     font-size: 3vw;
+     font-size: 24px;
      font-weight: bold;
 }
 .aboutweapproveListText{
-  font-size: 1.5vw;
+  font-size: 5px;
   text-align: center;
   color: #D7B321;
   font-weight: 500;
-  margin-top:1%;
+  margin-top:5%;
 }
 
 @media (min-width: 1024px) {
@@ -499,6 +507,7 @@ button.aboutweapproveFreeTrialButton:hover {
     }
     .aboutweapproveListText{
       font-size: 0.9vw;
+      margin-top: 1%;
     }
 
     .AboutWeApproveText{
@@ -512,6 +521,7 @@ button.aboutweapproveFreeTrialButton:hover {
 
 /* pricing */
 .pricingdiv{
+  
   display: flex;
   flex-direction: column;
   padding-bottom: 30px;
@@ -520,13 +530,14 @@ button.aboutweapproveFreeTrialButton:hover {
 .chooseaplanheading{
    margin-top: 5vw;
     margin-bottom: 5vw;
-    font-size: 3vw;
+    font-size: 24px;
      text-align: center;
     --tw-text-opacity: 1;
     color: rgb(195 33 49 / var(--tw-text-opacity));
     font-weight: 700;
 }
 .plansDiv{
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -535,7 +546,7 @@ button.aboutweapproveFreeTrialButton:hover {
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 50%;
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 3vw;
@@ -543,10 +554,10 @@ button.aboutweapproveFreeTrialButton:hover {
     border: 1px solid #D1D1D14F;
 }
 .planDivPlanName{
-    font-size: 2.4vw;
+    font-size: 20px;
     color: #74747480;
     font-weight: 500;
-     margin-top: 3vw;
+     margin-top: 4vh;
 }
 .planDivPlanPrice{
     background-color: #74747426;
@@ -554,19 +565,20 @@ button.aboutweapproveFreeTrialButton:hover {
     width: 70%;
     font-weight: 700;
      border-radius: 0.75rem/* 12px */;
-     font-size: 4.4vw;
-     margin-top: 3.3vw;
+     font-size: 22px;
+     margin-top: 3vh;
      text-align: center;
+     padding: 2% 0;
 }
 
 .planDivbreakline{
-    margin-top: 10px;
+    margin-top: 3vh;
     border: 0.5px solid rgb(218, 215, 215);
     width: 80%;
 }
 .planDivCheckboxs{
      margin-top: 15px;
-     width: 70%;
+     width: 50%;
 }
 
 .planDivCheckCircleDiv{
@@ -575,24 +587,24 @@ button.aboutweapproveFreeTrialButton:hover {
        justify-content: space-between;
        color: #747474FF;
        margin-top: 4% !important;
-        font-size: 2vw;
+        font-size: 9px;
         font-weight: 500;
         align-items: center;
 }
 .plandivcheckboxtext{
-     width: 75%;
+     width: 90%;
 }
 
 .choosePlanBtn{
-     margin-top: 4vw;
-    margin-bottom: 4vw;
-    font-size: 2.3vw;
+     margin-top: 3vh;
+    margin-bottom: 3vh;
+    font-size: 22px;
     font-weight: 700;
     background-color: #747474FF;
        width: 80%;
           --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
-       height: 4.1vw;
+       height: 4vh;
        border: none;
        cursor: pointer;
 }
@@ -602,11 +614,33 @@ button.aboutweapproveFreeTrialButton:hover {
         flex-direction: row;
          flex-wrap: wrap;
     }
-     .planDiv{
+    .planDiv{
         width: 30%;
         margin-top: 2%;
-
     }
+        .planDivPlanName {
+          font-size: 2.4vw;
+          color: #74747480;
+          font-weight: 500;
+          margin-top: 3vw;
+        }
+                .planDivPlanPrice {
+                  background-color: #74747426;
+                  color: #747474FF;
+                  width: 70%;
+                  font-weight: 700;
+                  border-radius: 0.75rem
+                    /* 12px */
+                  ;
+                  font-size: 4.4vw;
+                  margin-top: 3.3vw;
+                  text-align: center;
+                }
+                                .planDivbreakline {
+                                  margin-top: 10px;
+                                  border: 0.5px solid rgb(218, 215, 215);
+                                  width: 80%;
+                                }
     .planDivbreakline{
     margin-top: 15px;
     border: 0.5px solid rgb(218, 215, 215);
@@ -658,6 +692,10 @@ button.aboutweapproveFreeTrialButton:hover {
     .planDivCheckCircleDiv{
         margin-top: 2%;
           font-size: 1vw;
+            width: 100%;
+              display: flex;
+              justify-content: space-between;
+              color: #747474FF;
     }
      .choosePlanBtn{
         margin-top: 3vw;
@@ -847,7 +885,7 @@ button.aboutweapproveFreeTrialButton:hover {
             font-size: 10px;
              --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
-    line-height: 30px;
+    line-height: 20px;
     width: 50%;
 }
 .footerlogo{
@@ -909,9 +947,11 @@ button.aboutweapproveFreeTrialButton:hover {
     line-height: 30px;
 }
 
-.footerfourthdivparagraph > .logo{
-  font-weight: 600;
-   margin-right: 5px;
+.logo > i {
+  margin-right:3%;
+}
+.footerthirddivspan{
+  margin-left: 10%;
 }
 
 .footerlinebreak{
@@ -1015,16 +1055,17 @@ button.aboutweapproveFreeTrialButton:hover {
          height: 90%;
     }
     .footerseconddiv{
-        width: 10%;
-          height: 90%;
+        width: 15%;
+          height: 80%;
           
     }
     .footerthirddiV{
-        width: 30%;      
+        width: 25%;    
     }
      .footerfourthdiv {
         height: 60%;
          margin-top: 0px;
+         width: 25%;
     }
     .footerlinebreak{
       margin-top: 0;

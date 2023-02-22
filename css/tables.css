@@ -245,8 +245,9 @@ thead{
         margin-top: 6.2vw;
     }
     .table-control{
-        font-size: 1.4vw;
-        height: 3vw
+        font-size: 1.2vw;
+        height: 3vw;
+        padding: 1% 3%;
     }
         #addDeptModalOpen {
             font-size: 1vw;
