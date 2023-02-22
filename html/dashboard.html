@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="./css/hover.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <script src="https://kit.fontawesome.com/bade0d0075.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+    <title>Dashboard</title>
+    <style>
+        .navbar {
+            box-shadow: 3px 0px 10px #00000029;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-toggle {
+            padding: 10px;
+            background-color: #ddd;
+            border: 1px solid #aaa;
+            cursor: pointer;
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            z-index: 1;
+            display: none;
+            background-color: #fff;
+            border: 1px solid #aaa;
+        }
+
+        .dropdown-item {
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .dropdown-item img {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body class="flex">
+    <div>
+        <!-- navbar -->
+        <div
+            class='w-[18.8vw] min-h-[100vh] h-full bg-[#ffffff] font-inter items-center justify-center hidden navbar lg:flex'>
+            <div class='h-[98%] w-[95%] flex flex-col '>
+                <img src="./assets/WeApprove black.png" class="w-[70%] self-center mt-[2vw]">
+                <div class='flex flex-col mt-[6.25vw] w-[70%] self-center'>
+                    <div
+                        class=' text-[#707070] hover:text-[#D40E1F] navitemsdiv font-medium flex items-center px-[5%] h-[8vh] rounded-[0.2vw] text-[0.9vw] mb-[3%]'>
+                        <i class="fa-solid fa-border-all  text-[1.22vw]"></i>
+                        <a href="./dashboard.html" class='ml-[8%]'>Dashboard</a>
+                    </div>
+                    <div
+                        class=' text-[#707070] hover:text-[#D40E1F] navitemsdiv font-medium w-full flex items-center px-[5%] h-[8vh] rounded-[0.2vw] text-[0.9vw] mb-[3%]'>
+                        <i class="fa-solid fa-user-tie text-[1.22vw]"></i>
+                        <a href="./managestaff.html" class='ml-[8%]'>Manage Staff</a>
+                    </div>
+                    <div
+                        class=' text-[#707070] hover:text-[#D40E1F] navitemsdiv font-medium w-full flex items-center px-[5%] h-[8vh] rounded-[0.2vw] text-[0.9vw] mb-[3%]'>
+                        <i class="fa-solid fa-suitcase text-[1.22vw]"></i>
+                        <a href="./Managedept.html" class='ml-[8%]'>Manage Department</a>
+                    </div>
+                    <div
+                        class=' text-[#707070] hover:text-[#D40E1F] navitemsdiv font-medium w-full flex items-center px-[5%] h-[8vh] rounded-[0.2vw] text-[0.9vw] mb-[3%]'>
+                        <i class="fa-solid fa-credit-card text-[1.22vw]"></i>
+                        <a href="./manageSubscription.html" class='ml-[8%]'>Manage Subscription</a>
+                    </div>
+                    <div
+                        class=' text-[#707070] hover:text-[#D40E1F] navitemsdiv font-medium w-full flex items-center px-[5%] h-[8vh] rounded-[0.2vw] text-[0.9vw] mb-[3%]'>
+                        <i class="fa-solid fa-file text-[1.22vw]"></i>
+                        <a href="./reports.html" class='ml-[8%]'>Report</a>
+                    </div>
+                    <div
+                        class=' text-[#707070] w-full hover:text-[#D40E1F] navitemsdiv font-medium flex items-center px-[5%] h-[8vh] rounded-[0.2vw] text-[0.9vw] mb-[3%]  '>
+                        <i class="fa-solid fa-arrow-right-from-bracket text-[1.22vw]"></i>
+                        <a href="" class='ml-[8%]'>Log out</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dropdown menu -->
+    <div class="absolute top-[1.7vw] right-[7.3vw]">
+        <div class="dropdown w-[14.5vw] h-[3.1vw] ">
+            <div
+                class="flex px-1 items-center justify-between w-full h-[3.1vw] border-[1px] border-[#EAAC2980] border-solid">
+                <img src="./assets/girl.jpg" alt="" srcset="" class="w-[2vw] h-[2vw] rounded-full">
+                <h1 class="text-[1vw] font-medium text-[#707070]">Adeola Thompson</h1>
+                <i class="fa-solid fa-caret-down dropdown-toggle border-none bg-[white]"></i>
+            </div>
+            <div class="dropdown-menu w-full">
+                <a class="dropdown-item" data-value="1">
+                    <img src="./assets/briefcase-solid.png" alt="Image 1">
+                    Company Profile
+                </a>
+                <hr>
+                <a class="dropdown-item" data-value="2">
+                    <img src="./assets/key-solid.png" alt="Image 2">
+                    Change Profile
+                </a>
+                <hr>
+                <a class="dropdown-item" data-value="3">
+                    <img src="./assets/logout.png" alt="Image 3">
+                    Logout
+                </a>
+                <hr>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    </div>
+    <div class="dash-section">
+        <main role="main" class="b">
+            <div class="div-section">
+                <div class="one-section">
+                    <p class="dashboard-text">Dashboard</p>
+                    <div class="another-section">
+                        <input type="text" class="div-input" />
+                        <span class="fa fa-search fa-lg span-input"></span>
+                    </div>
+                </div>
+                <div class="section-three">
+                    <div class="section-four">
+                        <div class="section-five">
+                            <div class="first-container">
+                                <div class="cont">
+                                    <i class="fa-solid fa-file cont-i "></i>
+                                </div>
+                                <h3 class="cont-h3">1134</h3>
+                                <p class="cont-p">All memos raised</p>
+                                <hr>
+                                <p class="cont-p">844 memos accepted</p>
+                                <p class="cont-p">32 memos rejected</p>
+                                <p class="cont-p">32 memos rejected</p>
+                            </div>
+                            <div class="second-container">
+                                <div class="contain">
+                                    <span class="contain-span">
+                                        <i class="fa-solid fa-table-cells-large contain-i"></i>
+                                    </span>
+                                    <h3 class="contain-h3">Total department</h3>
+                                </div>
+                                <hr>
+                                <div class="contain-div">
+                                    <h3 class="con-h3">315</h3>
+                                    <span
+                                        class="con-span">
+                                        <i class="fa-solid fa-caret-up con-i"></i>
+                                        <span class="con-text">1,17%</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="third-container">
+                                <div class="one-div">
+                                    <span class="div-spanOne">
+                                        <i class="fa-solid fa-user div-i"></i>
+                                    </span>
+                                    <h3 class="div-h3">Total Number of Staff</h3>
+                                </div>
+                                <hr>
+                                <div class="two-div">
+                                    <h3 class="div-spanh3">680</h3>
+                                    <span class="div-spanTwo">
+                                        <i class="fa-solid fa-caret-up div-spani"></i>
+                                        <span class="span-div">1,17%</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- @*chart*@ -->
+                        <h6 class="chart-h6">Statistics</h6>
+                        <div class="chart">
+                            <div class="">
+                                <p class="chart-p">Overview</p>
+                                <span>
+
+                                </span>
+                            </div>
+                            <div class="chart-divOne">
+                                <canvas id="myChart" class="chart-canvas"></canvas>
+                            </div>
+                        </div>
+                        <h6 class="chart-h6Two">Manage Staff</h6>
+                        <div class="chart-two">
+                            <div class='chart-three'>
+                                <!-- table head -->
+                                <div class='div-table'>
+                                    <h1 class="table-1">S/N</h1>
+                                    <h1 class='table-2'>Staff Name</h1>
+                                    <h1 class='table-2'>Department</h1>
+                                    <h1 class="table-3">Assign role</h1>
+                                    <h1 class='table-1'>Action</h1>
+                                </div>
+
+                                <!-- content to map through -->
+                                <div id="markupContainer">
+                                    <div class='content'>
+                                        <h1 class="content-1">1.</h1>
+                                        <h1 class='content-2'>Software Engineering</h1>
+                                        <h1 class='content-2'>Software Development</h1>
+                                        <div class="content-option">
+                                            <select class="content-select">
+                                                <option value="" disabled selected hidden>Choose an option</option>
+                                                <option value="option1">Option 1</option>
+                                                <option value="option2" class='option-text'>Option 2</option>
+                                                <option value="option3" class='option-text'>Option 3</option>
+                                                <option value="option3" disable selected>-------</option>
+                                            </select>
+                                        </div>
+                                        <div class="div-content">
+                                            <input type="checkbox" name="" id="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- report -->
+                    <div class=" xl:w-[19.8vw] w-[25%] ml-[3.8vw] ">
+                        <p class="report-text">Report</p>
+                        <div class="report-div">
+                            <p class="report-memo">Memo Summary</p>
+                            <div class="report-div2">
+                                <div class="">
+                                    <div class="report-div3">
+                                        <p class="report-raised">Memos Raised</p>
+                                        <span
+                                            class="span-report">
+                                            <i class="fa-solid fa-wave-square"></i>
+                                            <span>70%</span>
+                                        </span>
+                                    </div>
+                                    <div class="report-div4">
+                                        <div class='inner-reportdiv'></div>
+                                    </div>
+                                </div>
+                                <div class="report-div5">
+                                    <div class="report-div6">
+                                        <p class="report-accepted">Memos Accepted</p>
+                                        <span
+                                            class="span-accepted">
+                                            <i class="fa-solid fa-wave-square"></i>
+                                            <span>80%</span>
+                                        </span>
+                                    </div>
+                                    <div class="report-div7">
+                                        <div class='inner-reportdiv1'></div>
+                                    </div>
+                                </div>
+                                <div class="report-div8">
+                                    <div class='report-div9'>
+                                        <p class="report-rejected">Memos Rejected</p>
+                                        <span
+                                            class="span-rejected">
+                                            <i class="fa-solid fa-wave-square"></i>
+                                            <span>50%</span>
+                                        </span>
+                                    </div>
+                                    <div class="inner-reportdiv2">
+                                        <div class='inner-reportdiv3'></div>
+                                    </div>
+                                </div>
+                                <div class="report-div10">
+                                    <div class="report-div11">
+                                        <p class="report-pending">Memos Pending</p>
+                                        <span class="span-pending">
+                                            <i class="fa-solid fa-wave-square"></i>
+                                            <span>90%</span>
+                                        </span>
+                                    </div>
+                                    <div class="inner-reportdiv4">
+                                        <div class='inner-reportdiv5'></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Budget Requirements -->
+                        <div class="budget">
+                            <div class="budget-div1">
+                                <p class="p-budget">Budget Requirements</p>
+                                <button class="budget-button">+</button>
+                            </div>
+                            <div class="budget-div2">
+                                <span>Cash</span>
+                                <span class="span-budget">#800,000</span>
+                            </div>
+                            <div class="budget-div2">
+                                <div class="budget-div3"></div>
+                                <div class="budget-div4">
+                                    <div>
+                                        <img src="" alt="">
+                                        <p>Subscription</p>
+                                    </div>
+                                    <div>
+                                        <img src="" alt="">
+                                        <p>Payment</p>
+                                    </div>
+                                    <div>
+                                        <img src="" alt="">
+                                        <p>Expenses</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="budget-div5">
+                                <div class="budget-div6">
+                                    <div class="budget-div7"></div>
+                                    <p>Yearly</p>
+                                </div>
+                                <div class="budget-div6">
+                                    <div class="budget-div7"></div>
+                                    <p>Monthly</p>
+                                </div>
+                                <div class="budget-div6">
+                                    <div class="budget-div7"></div>
+                                    <p>Daily</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="./js/dashboard.js"></script>
+    <script src="./js/layout.js"></script>
+</body>
+
+</html>
