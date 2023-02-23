@@ -41,7 +41,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 2.7vw;
+    height: 5vw;
+    margin-left: 1vw;
     width: 55vw;
     --tw-bg-opacity: 1;
     background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -132,7 +133,7 @@
 }
 
 .section-four {
-    width: 60%;
+    width: 70%;
     margin-top: 3.5vw;
     margin-bottom: 1.8vw;
 }
