@@ -2,7 +2,12 @@
   margin:0;
   padding:0;
 }
-
+body{
+  transition: all ease-in-out 1s;
+}
+html {
+  scroll-behavior: smooth;
+}
 .navigation {
   justify-content: space-between;
   align-items: center;
