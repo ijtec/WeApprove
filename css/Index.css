@@ -372,6 +372,7 @@ html {
 /* About we approve */
 .aboutWeapproveDiv {
   width: 100%;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -405,13 +406,58 @@ html {
 .aboutWeapproveImgDiv {
   width: 80%;
   height: 35vw;
-  background-color: #ffc0cb;
+  /* background-color: #ffc0cb; */
   overflow: hidden;
 }
 
 .aboutWeapproveImgDiv img {
-  width: 100%;
+  width: 50%;
 }
+
+ .weappimg{
+  width: 60%;
+  position: relative;
+  left: 51%;
+  bottom: 96%; 
+
+} 
+
+.youtubelink{
+  
+  background-color: white;
+  border: 1px;
+  padding: 29px;
+  position: absolute;
+  left: -50%;
+  top: 100%;
+  width: 83%;
+height: 108px;
+} 
+
+.fa-circle-play{
+  font-size: 1.5rem;
+  color: #8E000E;
+  margin-top: 2rem;
+  background-color: #f5f5f5;
+}
+
+.fa-circle-play,button:hover{
+background-color: #8E000E ;
+color: #F5F5F5;
+padding: .2rem 1rem;
+border-radius: 5px; 
+transition:all .5s ;
+margin-top: 0;
+}
+
+button{
+  background: none;
+  border: none;
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 1rem;
+  margin-left: 5rem;
+} 
 
 .AboutWeApproveTextDiv {
   width: 80%;
@@ -432,6 +478,7 @@ html {
   line-height: 3.5vw;
 }
 
+
 @media (min-width: 1024px) {
   .aboutweapproveListImg {
       width: 3vw;
@@ -451,7 +498,7 @@ html {
   .aboutWeapproveImgDiv {
     width: 45%;
     height: 35vw;
-    background-color: #D40E1F;
+    /* background-color: #D40E1F; */
   }
   
   .AboutWeApproveTextDiv {
